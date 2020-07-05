@@ -6,7 +6,7 @@
   <ProtectedClient>Enable</ProtectedClient>
   <PrinterRedirection>Disable</PrinterRedirection>
   <ClipboardRedirection>Disable</ClipboardRedirection>
-  <MemoryInMB>8192MB</MemoryInMB>
+  <MemoryInMB>8192</MemoryInMB>
   <MappedFolders>
     <MappedFolder>
       <HostFolder>WSBBASEDIR\scripts</HostFolder>
