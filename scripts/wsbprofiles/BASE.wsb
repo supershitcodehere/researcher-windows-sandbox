@@ -1,0 +1,23 @@
+<Configuration>
+  <Networking>Default</Networking>
+  <vGPU>Enable</vGPU>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <MemoryInMB>8192MB</MemoryInMB>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>WSBBASEDIR\scripts</HostFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>WSBBASEDIR\shared</HostFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>C:\Users\WDAGUtilityAccount\Desktop\scripts\entrypoint.cmd</Command>
+  </LogonCommand>
+</Configuration>
