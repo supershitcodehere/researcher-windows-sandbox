@@ -7,6 +7,8 @@ del C:\users\WDAGUtilityAccount\Desktop\firefox.msi
 "C:\Program Files\Mozilla Firefox\firefox.exe" -CreateProfile "profile1 C:\users\WDAGUtilityAccount\Desktop\firefox-secure-profile"
 copy "C:\users\WDAGUtilityAccount\Desktop\scripts\firefox-secure-profile\prefs.js" "C:\users\WDAGUtilityAccount\Desktop\firefox-secure-profile\prefs.js"
 copy "C:\users\WDAGUtilityAccount\Desktop\scripts\firefox-secure-profile.bat" "C:\users\WDAGUtilityAccount\Desktop\start-with-firefox-secure-profile.bat"
-start C:\users\WDAGUtilityAccount\Desktop\tor\Tor\tor.exe
-C:\users\WDAGUtilityAccount\Desktop\start-with-firefox-secure-profile.bat
+
+powershell Set-ExecutionPolicy RemoteSigned
+powershell -Fil "C:\users\WDAGUtilityAccount\Desktop\scripts\network.ps1"
+
 pause
