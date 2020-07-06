@@ -7,8 +7,8 @@ One-Click Anonymous Windows Sandbox Script.
 # Proposal
 
 ```
-WAN <---->  VPN Router    <-->  Windows(Host)  <-->  Windows SandBox(HTTP Proxy)
-          with Kill Switch       with VPN               with HTTP Proxy & Windows Firewall
+WAN <---->  VPN Router    <-->  Windows(Host)  <----Default Block All Traffic---->  Windows SandBox(HTTP Proxy)
+          with Kill Switch       with VPN             Allow Only Proxy IP           with HTTP Proxy & Windows Firewall
 ```
 
 # Usage
