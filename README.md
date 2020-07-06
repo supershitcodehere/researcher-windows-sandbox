@@ -8,3 +8,5 @@ One-Click Windows Sandbox Script.
 # Todo
 - [ ] torrc
 - [ ] vpn
+- [x] http proxy
+- [x] firewall
