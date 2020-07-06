@@ -14,6 +14,14 @@ user_pref("network.prefetch-next", false);
 user_pref("privacy.donottrackheader.enabled", true);
 user_pref("privacy.donottrackheader.value", 1);
 
-user_pref("network.proxy.socks", "127.0.0.1");
-user_pref("network.proxy.socks_port", 9050);
+user_pref("network.proxy.http", "127.0.0.1");
+user_pref("network.proxy.http_port", 3128);
+
+user_pref("network.proxy.ssl", "127.0.0.1");
+user_pref("network.proxy.ssl_port", 3128);
+
+user_pref("network.proxy.ftp", "127.0.0.1");
+user_pref("network.proxy.ftp_port", 3128);
+
+user_pref("network.proxy.share_proxy_settings", true);
 user_pref("network.proxy.type", 1);
