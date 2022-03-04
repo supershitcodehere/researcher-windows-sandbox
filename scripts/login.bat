@@ -27,8 +27,7 @@ del C:\users\WDAGUtilityAccount\Desktop\firefox.msi
 copy "C:\users\WDAGUtilityAccount\Desktop\scripts\firefox-secure-profile\prefs.js" "C:\users\WDAGUtilityAccount\Desktop\firefox-secure-profile\prefs.js"
 copy "C:\users\WDAGUtilityAccount\Desktop\scripts\firefox-secure-profile.bat" "C:\users\WDAGUtilityAccount\Desktop\start-with-firefox-secure-profile.bat"
 
-powershell Set-ExecutionPolicy RemoteSigned
-powershell C:\users\WDAGUtilityAccount\Desktop\scripts\network.ps1 %NORDVPNIP%
+powershell -executionpolicy bypass -file C:\users\WDAGUtilityAccount\Desktop\scripts\network.ps1 %NORDVPNIP%
 
 rem start C:\users\WDAGUtilityAccount\Desktop\tor\Tor\tor.exe HardwareAccel 1 ClientOnly 1 StrictNodes 1 ExcludeNodes "{ch},{jp},{us},{gb},{ca},{au},{nz},{dk}" HTTPSProxy 127.0.0.1:3128
 
